@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "example-app"
+version = "0.1.0"
+description = ""
+authors = ["nikita-ivankovich <92374148+bobunist@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.6"
+sqlalchemy = "^2.0.36"
+singleton-package = "^0.6.0"
+python-dotenv = "^1.0.1"
+pydantic-settings = "^2.6.1"
+asyncpg = "^0.30.0"
+alembic = "^1.14.0"
+uvicorn = "^0.32.1"
+faker = "^33.1.0"
+orjson = "^3.10.12"
+httptools = "^0.6.4"
+uvloop = { version = "^0.20.0", markers = "sys_platform == 'linux'" }
+psycopg2-binary = { version = "^2.9.10", markers = "sys_platform == 'linux'" }
+psycopg2 = { version = "^2.9.10", markers = "sys_platform != 'linux'" }
+gunicorn = "^23.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
